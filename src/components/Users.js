@@ -12,7 +12,7 @@ class Users extends Component {
           Users!
           {users}
         </ul>
-        {this.props.numberOfUsers}
+        {users.length}
       </div>
     )
   }
@@ -20,7 +20,7 @@ class Users extends Component {
 
 //add mapStateToProps here
 const mapStateToProps = (state) => {
-  return {users: state.users, numberOfUsers: state.users.length}
+  return {users: state.users}
 }
 
 // connect this component to Redux
